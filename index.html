@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+#currentPPM, #currentWater, #targetPPM{
+  width: 60px;
+}
+.title{font-family:"Microsoft JhengHei", Times, serif;font-weight:bolder; font-size:36px;color:#3CB371;}
+.text{font-family:"Microsoft JhengHei", Times, serif;font-size:24px}
+.sText{font-family:"Microsoft JhengHei", Times, serif;font-size:18px}
+
+.btn-primary {
+    font-size:24px;
+    color: #fff;
+    background-color: #3CB371;
+    border-color: #3CB371;
+}
+
+.form-control {
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+</style>
+
+</head>
+
+<body>
+ <p class="title">濃度計算</p> 
+ <hr>
+<p class="text">目前濃度：<input type="text" class="form-control" id='currentPPM'>  <span style="font-size:18px;">  (ppm)</span></P>
+ <P class="text">目前水量：<input type="text" class="form-control" id='currentWater'>  <span style="font-size:18px;">  (公升)</span></P>
+  <P class="text">目標濃度：<input type="text" class="form-control" id='targetPPM'>  <span style="font-size:18px;">  (ppm)</span></P>
+<p></p> 
+<p><button class="btn-primary" id='countId'>送出</button></p>
+ <hr>
+<p class="text">需要加入水量：<em id='addWater'></em> 公升。</p>
+<p class="text">最後總水量：<em id='totalWater'></em> 公升。</p>
+
+<script type="text/javascript" src="cal.js" ></script>
+
+
+</body>
+</html>
